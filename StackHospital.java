@@ -25,3 +25,12 @@ public class StackHospital <PatientType> extends Hospital <PatientType>
 	{
 		return "StackHospital";
 	}
+	public String allPatientInfo()
+	{
+		String s="";
+		for(int i=0;i<Patient.size();i++)
+		{
+			s=Patient.get(i).toString();
+		}
+		return s;
+	}

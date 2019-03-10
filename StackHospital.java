@@ -34,3 +34,5 @@ public class StackHospital <PatientType> extends Hospital <PatientType>
 		}
 		return s;
 	}
+}
+

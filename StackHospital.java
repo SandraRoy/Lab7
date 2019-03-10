@@ -8,6 +8,10 @@ public class StackHospital <PatientType> extends Hospital <PatientType>
 	{
 		Patient.push(patient);
 	}
+	public int numPatients()
+	{
+		return Patient.size();
+	}
 	public PatientType nextPatient()
 	{
 		return Patient.peek();
@@ -16,7 +20,8 @@ public class StackHospital <PatientType> extends Hospital <PatientType>
 	{
 		 return Patient.pop();
 	}
-	public int numPatients()
+	
+	public String hospitalType()
 	{
-		return Patient.size();
+		return "StackHospital";
 	}

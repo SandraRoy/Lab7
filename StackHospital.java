@@ -2,9 +2,13 @@ import java.util.Stack;
 
 public class StackHospital <PatientType> extends Hospital <PatientType>
 {
-	Stack <PatientType> Patient=new Stack <PatientType>();
+	Stack <PatientType> Patient;
+	public StackHospital()
+	{
+		Patient=new Stack <PatientType>();
+	}
 	
-	public void AddPatient(PatientType patient)
+	public void addPatient(PatientType patient)
 	{
 		Patient.push(patient);
 	}
@@ -30,9 +34,10 @@ public class StackHospital <PatientType> extends Hospital <PatientType>
 		String s="";
 		for(int i=0;i<Patient.size();i++)
 		{
-			s=Patient.get(i).toString();
+			s+=Patient.get(i).toString();
 		}
 		return s;
 	}
 }
+
 
